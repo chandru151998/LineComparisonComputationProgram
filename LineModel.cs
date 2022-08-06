@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UC1
+namespace UC2
 {
-    internal class LineModel
+    internal class Linemodel
     {
         public static void LineAndModel()
         {
@@ -18,12 +18,14 @@ namespace UC1
             double y1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("y2 is ");
             double y2 = Convert.ToInt32(Console.ReadLine());
-            double x3 = x2 - x1;
-            double y3 = y2 - y1;
-            double z1 = x3 * x3;
-            double z2 = y3 * y3;
-            double z3 = z1 + z2;
-            Console.WriteLine("Lentgh is " + Math.Sqrt(z3));
+            if (y1 == y2 && x1 == x2)
+            {
+                Console.WriteLine("Lines are Equal");
+            }
+            else
+            {
+                Console.WriteLine("Lines are unequal");
+            }
         }
     }
 }
