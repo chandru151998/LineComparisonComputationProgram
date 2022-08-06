@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace UC2
+namespace UC3
 {
-    internal class Linemodel
+    internal class LineModel
     {
         public static void LineAndModel()
         {
@@ -18,13 +18,17 @@ namespace UC2
             double y1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("y2 is ");
             double y2 = Convert.ToInt32(Console.ReadLine());
-            if (y1 == y2 && x1 == x2)
+            if (y1 == y2)
             {
                 Console.WriteLine("Lines are Equal");
             }
+            else if (y2 > y1)
+            {
+                Console.WriteLine("Line 2 is greater than line 1");
+            }
             else
             {
-                Console.WriteLine("Lines are unequal");
+                Console.WriteLine("Line 2 is lesser than line 1");
             }
         }
     }
