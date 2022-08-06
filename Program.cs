@@ -1,12 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
 //Console.WriteLine("Hello, World!");
-namespace LineComp
+namespace UC1
 {
-    class program
+    class Line
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Line Comparision Computation Program");
+            LineModel.LineAndModel();
         }
     }
 }
