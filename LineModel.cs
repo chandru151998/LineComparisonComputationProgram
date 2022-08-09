@@ -10,22 +10,16 @@ namespace UC2
     {
         public static void LineAndModel()
         {
-            Console.WriteLine("x1 is ");
-            double x1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("x2 is ");
-            double x2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("y1 is ");
-            double y1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("y2 is ");
-            double y2 = Convert.ToInt32(Console.ReadLine());
-            if (y1 == y2 && x1 == x2)
-            {
-                Console.WriteLine("Lines are Equal");
-            }
-            else
-            {
-                Console.WriteLine("Lines are unequal");
-            }
+           double lengthOfLine;
+            double lengthOfLine1;
+
+            lengthOfLine = Math.Sqrt(Math.Pow((x2 - x1), 2) + Math.Pow((y2 - y1), 2));
+            Console.WriteLine("Length of a given Line is: " + lengthOfLine);
+
+            lengthOfLine1 = Math.Sqrt(Math.Pow((a2 - a1), 2) + Math.Pow((b2 - b1), 2));
+            Console.WriteLine("Length of a given Line is: " + lengthOfLine1);
+
+            Console.WriteLine(lengthOfLine.Equals(lengthOfLine1));
         }
     }
 }
