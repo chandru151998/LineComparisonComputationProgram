@@ -8,6 +8,13 @@ namespace UC2
 {
     internal class Linemodel
     {
+         /// <summary>
+        /// Lengthes the of line.
+        /// </summary>
+        /// <param name="x1">The x1.</param>
+        /// <param name="y1">The y1.</param>
+        /// <param name="x2">The x2.</param>
+        /// <param name="y2">The y2.</param>
         public static void LineAndModel()
         {
            double lengthOfLine;
